@@ -1,13 +1,17 @@
 <html>
 
 <head>
-  <title>Express</title>
+  <title>Chatting Page</title>
   <link rel="stylesheet" href="/css/style.css">
+  <script src="/libs/socket.io.min.js"></script>
+  <script>
+    const socket = io("http://localhost:3000");
+  </script>
 </head>
 
 <body>
-  <h1>Express</h1>
-  <p>Welcome to Express</p>
+  <h1>Let's Chat</h1>
+  <p>Welcome to chatting room.</p>
 </body>
 
 </html>
