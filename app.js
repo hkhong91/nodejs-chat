@@ -11,9 +11,8 @@ app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.use('/', require('./routes/index'))
-app.use('/users', require('./routes/users'))
+app.use('/users', require('./src/routes/users'))
 
-app.io = require('./src/socket.io')
+app.io = require('./src/socket/chat.io')
 
 module.exports = app
