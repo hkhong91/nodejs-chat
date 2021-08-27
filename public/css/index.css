@@ -6,16 +6,3 @@ body {
 a {
   color: #00B7FF;
 }
-
-p {
-  margin: 0.5rem;
-}
-
-.message-list {
-  height: 80%;
-  overflow-y: auto;
-}
-
-.message-input {
-  height: 10%;
-}
